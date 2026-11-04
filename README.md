@@ -118,10 +118,10 @@ joineazy-dashboard/
 
 ### Screenshots
 #### Admin View
-![Admin Dashboard](./screenshots/admin.png)
+![Admin Dashboard](screenshots/admin.png)
 
-#### Student View 
-![Student Dashboard](./screenshots/student.png)
+#### Student View
+![Student Dashboard](screenshots/student.png)
 
 ### Demo Video
 Loom Video Link: (Paste here - 3-5 min walkthrough of both roles)
