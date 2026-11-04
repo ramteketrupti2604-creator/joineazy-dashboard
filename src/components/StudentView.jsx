@@ -58,5 +58,4 @@ export default function StudentView(){
       )}
     </div>
   )
-}/ /   s t u d e n t   p r o g r e s s   l o g i c  
- 
+}
