@@ -3,7 +3,7 @@
 
 **Live Demo:** https://joineazy-dashboard-7yep.vercel.app/
 **GitHub Repo:** https://github.com/ramteketrupti2604-creator/joineazy-dashboard
-  **Submitted by:** Trupti Ramteke
+**Submitted by:** Trupti Ramteke
 
 This is a responsive dashboard for a student-assignment system with two roles: Student and Admin (Professor), built as per Joineazy Frontend Intern Assignment.
 
@@ -79,42 +79,42 @@ joineazy-dashboard/
 └── README.md
 ### Component Architecture
 
-*1. http://App.jsx (Root)*
+_1. http://App.jsx (Root)_
 - Holds global state: `currentUser`, `assignments`, `role`
 - Manages localStorage sync via `useEffect`
 - Handles role switching logic
 - Conditional rendering: AdminView vs StudentView
 
-*2. RoleSwitcher Component*
+_2. RoleSwitcher Component_
 - Mock login dropdown with 2 admins + 5 students
 - On change, updates App state, filters data accordingly
 
-*3. AdminView Component*
-- *State:* assignments created by logged-in admin
-- *Functions:* `handleCreate()`, `handleEdit()`, `handleDelete()`
-- *Logic:* For each assignment, calculate `completionRate = (submittedCount / totalAssigned) * 100`
+_3. AdminView Component_
+- _State:_ assignments created by logged-in admin
+- _Functions:_ `handleCreate()`, `handleEdit()`, `handleDelete()`
+- _Logic:_ For each assignment, calculate `completionRate = (submittedCount / totalAssigned) _ 100`
 - Shows table of students with status
 
-*4. StudentView Component*
+_4. StudentView Component_
 - Filters assignments assigned to current student
-- *Two-step confirmation:* 
+- _Two-step confirmation:_
   Step 1: `isConfirming` state -> shows dialog
   Step 2: `handleFinalSubmit()` -> status = Submitted
 - Progress Indicator: `submitted.length / total.length`
 
 ### Key Design Decisions
 
-1.  *No Backend, localStorage:* As per requirement, used localStorage for persistence. On first load, seed data is injected if no data exists, ensuring data survives refresh.
+1.  _No Backend, localStorage:_ As per requirement, used localStorage for persistence. On first load, seed data is injected if no data exists, ensuring data survives refresh.
 
-2.  *Role-based Filtering:* Instead of real auth, filtered assignments by `createdBy` for Admin and `assignedTo` array for Student. This ensures privacy of data as required.
+2.  _Role-based Filtering:_ Instead of real auth, filtered assignments by `createdBy` for Admin and `assignedTo` array for Student. This ensures privacy of data as required.
 
-3.  *Two-step Submit for Safety:* To avoid accidental submits, added a confirmation dialog (ConfirmDialog component) before marking as submitted. This improves UX.
+3.  _Two-step Submit for Safety:_ To avoid accidental submits, added a confirmation dialog (ConfirmDialog component) before marking as submitted. This improves UX.
 
-4.  *Class Completion Rate:* Calculated dynamically in AdminView - not stored, derived from student submissions. Makes it real-time.
+4.  _Class Completion Rate:_ Calculated dynamically in AdminView - not stored, derived from student submissions. Makes it real-time.
 
-5.  *Mobile Responsive:* Used Tailwind's responsive utilities (`grid-cols-1 md:grid-cols-2`, `flex-col md:flex-row`) for both dashboards. Tested on 375px width.
+5.  _Mobile Responsive:_ Used Tailwind's responsive utilities (`grid-cols-1 md:grid-cols-2`, `flex-col md:flex-row`) for both dashboards. Tested on 375px width.
 
-6.  *Component Reusability:* AssignmentCard used in both roles with conditional props (show edit/delete only for admin).
+6.  _Component Reusability:* AssignmentCard used in both roles with conditional props (show edit/delete only for admin).
 
 ### Screenshots
 #### Admin View
@@ -122,7 +122,4 @@ joineazy-dashboard/
 
 #### Student View
 ![Student Dashboard](screenshots/student.png)
-
-### Demo Video
-Loom Video Link: (Paste here - 3-5 min walkthrough of both roles)
 
