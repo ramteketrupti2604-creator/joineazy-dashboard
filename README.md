@@ -57,10 +57,13 @@ This is a responsive dashboard for a student-assignment system with two roles: S
 git clone https://github.com/ramteketrupti2604-creator/joineazy-dashboard.git
 
 cd joineazy-dashboard
+
 2. Install dependencies
 npm install
+
 3. Run dev server
 npm run dev
+
 4. Build for production
 npm run build
 ### Folder Structure
