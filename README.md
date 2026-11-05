@@ -60,7 +60,6 @@ npm install
 npm run dev
 4. Build for production
 npm run build
-
 ### Folder Structure
 joineazy-dashboard/
 ├── public/
