@@ -1,35 +1,35 @@
 # Joineazy - Assignment & Review Dashboard (Task 1)
 
-**Live Demo:** https://joineazy-dashboard-7yep.vercel.app/
-**GitHub Repo:** https://github.com/ramteketrupti2604-creator/joineazy-dashboard
-**Submitted by:** Trupti Ramteke
+*Live Demo:* https://joineazy-dashboard-7yep.vercel.app/
+*GitHub Repo:* https://github.com/ramteketrupti2604-creator/joineazy-dashboard
+*Submitted by:* Trupti Ramteke
 
 This is a responsive dashboard for a student-assignment system with two roles: Student and Admin (Professor), built as per Joineazy Frontend Intern Assignment.
 
 ### Live Links
-- **Deployed Link (Vercel):** https://joineazy-dashboard-7yep.vercel.app/
-- **GitHub:** https://github.com/ramteketrupti2604-creator/joineazy-dashboard
+- *Deployed Link (Vercel):* https://joineazy-dashboard-7yep.vercel.app/
+- *GitHub:* https://github.com/ramteketrupti2604-creator/joineazy-dashboard
 
 ### Must-Have Features - DONE
 
-**1. Login and Roles (Mock)**
+*1. Login and Roles (Mock)*
 - Simple role switcher implemented in header (no real auth)
 - Seeded users: 2 Admins, 5 Students
 - Each user sees only their own data
 
-**2. Student View**
+*2. Student View*
 - List of assignments with title, description, due date, status, and Drive link
 - Two-step submission: `Yes, I have submitted` -> Final confirmation dialog -> Status changes to Submitted
 - Overall progress indicator: `3 of 5 submitted`
 
-**3. Admin View**
+*3. Admin View*
 - Create, Edit, Delete assignments with Drive link
 - Assign to all students or selected students
 - For each assignment: shows every student's status (Submitted/Not Submitted)
 - Progress bar showing class completion rate
 - Admin sees only assignments they created
 
-**4. General**
+*4. General*
 - Fully responsive on mobile and desktop
 - Data saved in localStorage (survives page refresh)
 - Empty, loading, and error states handled
@@ -43,16 +43,15 @@ This is a responsive dashboard for a student-assignment system with two roles: S
 - localStorage persistence
 
 ### Tech Stack
-- **React.js (Vite)**
-- **Tailwind CSS**
-- **React Hooks:** useState, useEffect
-- **Storage:** localStorage (No backend)
-- **Deployment:** Vercel
+- *React.js (Vite)*
+- *Tailwind CSS*
+- *React Hooks:* useState, useEffect
+- *Storage:* localStorage (No backend)
+- *Deployment:* Vercel
 
 ### Setup Steps (Run Locally)
 
 1. Clone the repo
-```bash
 git clone https://github.com/ramteketrupti2604-creator/joineazy-dashboard.git
 cd joineazy-dashboard
 2. Install dependencies
@@ -116,5 +115,4 @@ _4. StudentView Component_
 5.  _Mobile Responsive:_ Used Tailwind's responsive utilities (`grid-cols-1 md:grid-cols-2`, `flex-col md:flex-row`) for both dashboards. Tested on 375px width.
 
 6.  _Component Reusability:* AssignmentCard used in both roles with conditional props (show edit/delete only for admin).
-
 
