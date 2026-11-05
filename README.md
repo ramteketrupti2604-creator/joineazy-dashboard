@@ -66,18 +66,16 @@ npm run build
 
 joineazy-dashboard/
 ├── public/
-
 ├── src/
 │   ├── components/
-│   │   ├── AdminView.jsx      # Admin dashboard logic - CRUD + class completion
-│   │   ├── StudentView.jsx    # Student dashboard - 2-step submit + progress
-│   │   ├── AssignmentCard.jsx # Reusable assignment card
-│   │   ├── RoleSwitcher.jsx   # Mock login / role switcher
-│   │   └── ConfirmDialog.jsx  # Final confirmation dialog
-│   ├── App.jsx                # Main App with role state & localStorage
+│   │   ├── AdminView.jsx     
+│   │   ├── StudentView.jsx    
+│   │   ├── AssignmentCard.jsx 
+│   │   ├── RoleSwitcher.jsx   
+│   │   └── ConfirmDialog.jsx  
+│   ├── App.jsx                
 │   ├── main.jsx
-│   └── index.css              # Tailwind setup
-
+│   └── index.css              
 ├── package.json
 └── README.md
 
