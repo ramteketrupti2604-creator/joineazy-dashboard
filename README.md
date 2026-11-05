@@ -63,8 +63,10 @@ npm run dev
 4. Build for production
 npm run build
 ### Folder Structure
+
 joineazy-dashboard/
 ├── public/
+
 ├── src/
 │   ├── components/
 │   │   ├── AdminView.jsx      # Admin dashboard logic - CRUD + class completion
@@ -75,6 +77,7 @@ joineazy-dashboard/
 │   ├── App.jsx                # Main App with role state & localStorage
 │   ├── main.jsx
 │   └── index.css              # Tailwind setup
+
 ├── package.json
 └── README.md
 
