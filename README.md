@@ -1,7 +1,9 @@
 # Joineazy - Assignment & Review Dashboard (Task 1)
 
 *Live Demo:* https://joineazy-dashboard-7yep.vercel.app/
+
 *GitHub Repo:* https://github.com/ramteketrupti2604-creator/joineazy-dashboard
+
 *Submitted by:* Trupti Ramteke
 
 This is a responsive dashboard for a student-assignment system with two roles: Student and Admin (Professor), built as per Joineazy Frontend Intern Assignment.
